@@ -29,6 +29,7 @@ class MainActivity : AppCompatActivity(){
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
+
         adapter = SuperHeroesAdapter()
         binding.heroesRecyclerView.addOnItemCLickListener(object : OnItemClickListener {
             override fun onItemClicked(position: Int, view: View) {
